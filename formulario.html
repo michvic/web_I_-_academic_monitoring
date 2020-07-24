@@ -1,32 +1,59 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styler.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Forulário</h1>
-    <div style="text-align: center;">
-        <h1>Quem é o aniversariante?</h1>
+
+
+    <p>O uso de formulário HTML (ou HTML form) é muito frequente na web,
+        é um dos principais pontos de interação entre usuários e uma aplicação web.
+        Geralmente, eles funcionam enviando os dados para um servidor, porém também podem ser utilizados
+        para alguma função na própria página.
+    </p>
+    <p>
+        O HTTP é o protocolo responsável pela comunicação de sites na web, e os principais métodos de envio são GET e
+        POST:
+    <ul>
+        <li>Quando utilizamos o GET, os parâmetros são passados no cabeçalho da requisição.
+            Por isso, podem ser vistos pela URI, como no caso do nosso formulário de login.</li>
+        <li>O POST, ao contrário do GET, envia os parâmetros no corpo da requisição HTTP. Escondendo eles da URI:</li>
+    </ul>
+    </p>
+    <!-- tag para por o video -->
+    <!-- <div style="text-align: center;">
+        <video src=""></video>
+    </div> -->
+    </br>
+    <h1>Quem é o aniversariante?</h1>
     <form action="https://app-happy-birthday.herokuapp.com/happybirthday" method="get">
         <label for="name">nome:</label>
         <input type="text" name='name'>
 
         <label for="age">Idade:</label>
         <input type="number" name="age" id="">
-        
+
         <button type="submit">Parabenizar</button>
     </form>
-    
-    <h1>Crie seu próprio formulário</h1>
+    </br>
+    <h2>DESAFIO!! crie seu próprio formulário</h2>
 
-    <form action="https://app-happy-birthday.herokuapp.com/form", method="POST">
+    <p>Utiliza o inspecionar para descomentar um exemplo de form usando seletores</p>
+
+    <!-- <form action="https://app-happy-birthday.herokuapp.com/form" , method="POST">
         <select name="programming">
             <option value="Java">Java</option>
             <option value="PHP">PHP</option>
         </select>
         <button type="submit">enviar</button>
-    </form>
-    </div>
+    </form> -->
+
+
 </body>
+
 </html>
