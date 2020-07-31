@@ -2,6 +2,18 @@ body {
     font-size:18px;
 }
 
+
+h2{
+    margin-left: 6px;
+}
+h3{
+    margin-left: 10px;
+}
+
+p{
+    margin-left: 15px;
+}
+
 ul, ol, dl {
     margin-left:20px;
     
