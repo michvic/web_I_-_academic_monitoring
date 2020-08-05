@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            background-color: DodgerBlue;
+
+        }
+        .flex-container1 > .item{
+            flex-grow: 1;
+        }
+        .flex-container2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /*flex-start  | flex-end | center | space-between | space-around | space-evenly | start | end | left ; */
+            background-color: DodgerBlue;
+        }
+
+        .item {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <p>O Flex Container é a tag que envolve os itens flex, ao indicar display: flex, essa tag passa a ser um Flex Container.</p>
+    <p><img src="./img/flexbox.PNG" alt="Flex Box"></p>
+    <p>veja mais em: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a>. acessado em 2020</p>
+    <h2>flex-wrap</h2>
+   
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <h2>flex-grow</h2>
+   
+    <div class="flex-container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <h2>justify-content</h2>
+    <div class="flex-container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+    <p>Tente redimencionar a jenela do browser.</p>
+    <p>Um contêiner com "flex-wrap: nowrap;" nunca embrulhará seus itens.</p>
+</body>
+
+</html>
