@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styler.css">
+    <style>
+
+        .conteiner{
+            background: gray;
+            margin: auto;
+            padding:  1px;
+        }
+        .box_model{
+            background: blue;
+            border: 10px solid black;
+            margin:100px;
+            padding: 20px;
+        }
+        .box_model p {
+            background-color:tomato;
+            text-align: center;
+            color: wheat;
+            padding: 0em;
+            margin: 0em;
+        }
+    </style>
+    <title>Introdução</title>
+</head>
+
+<body>
+
+    <h2>Box Model</h2>
+    <div>
+        <ul>
+            <li style="color: gray;">margin</li>
+            <li style="color: black;">border</li>
+            <li style="color: blue;">padding</li>
+            <li style="color: tomato;">conteudo</li>
+        </ul>
+    </div>
+    <div class="conteiner">
+        <div class="box_model"><p>Conteudo</p></div>
+    </div>
+    <div>
+        <h3>DESAFIO!!!</h3>
+        <p>Abra o inspecionar do seu navegador e mude os valores da margin, border e paddingdo, da div que tem a clsse box_model. </p>
+        <p style="text-align: center;"><img src="img/box_model.PNG" alt=""></p>
+    </div>
+</body>
+
+</html>
