@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM</title>
+    <style media="screen">
+      kbd {
+        padding: .2rem .4rem;
+        font-size: 87.5%;
+        color: #fff;
+        background-color: #212529;
+        border-radius: .2rem;
+      }
+      pre {
+        background: #001628;
+        font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
+        clear: both;
+        color: #fff;
+        padding: 0;
+        -moz-tab-size: 2;
+        -o-tab-size: 2;
+        tab-size: 2;
+        -ms-word-break: normal;
+        word-break: normal;
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+        position: relative;
+        line-height: 28px;
+        border-radius: 8px;
+        min-width: 100px;
+        max-width: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <p>O Document Object Model (DOM) é uma interface de programação para os documentos HTML e XML. Representa a página de forma que os programas possam alterar a estrutura do documento, alterar o estilo e conteúdo. O DOM representa o documento com nós e objetos, dessa forma, as linguagens de programação podem se conectar à página.</p>
+
+    <p>Por exemplo, o DOM padrão especifica que o método getElementsByTagName no código abaixo deve retornar uma lista de todos os elementos p no documento:</p>
+    <pre>
+      <code>
+        var paragraphs = document.getElementsByTagName("p");
+        alert(paragraphs[1].innerText)
+      </code>
+    </pre>
+    <p>No exemplo acima pegamos o texto da tag p(na segunda posição, ou seja, o segundo texto deste artigo) e exibimos em um alert.</p>
+
+
+  </body>
+</html>
