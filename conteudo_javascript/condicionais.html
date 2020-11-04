@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Condicionais</title>
+    <style media="screen">
+      kbd {
+        padding: .2rem .4rem;
+        font-size: 87.5%;
+        color: #fff;
+        background-color: #212529;
+        border-radius: .2rem;
+      }
+      pre {
+        background: #001628;
+        font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
+        clear: both;
+        color: #fff;
+        padding: 0;
+        -moz-tab-size: 2;
+        -o-tab-size: 2;
+        tab-size: 2;
+        -ms-word-break: normal;
+        word-break: normal;
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+        position: relative;
+        line-height: 28px;
+        border-radius: 8px;
+        min-width: 100px;
+        max-width: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Condicionais</h1>
+    <p>Para controlar o fluxo dentro de um programa de computador são necessárias estruturas para prover isso em uma linguagem de programação.</p>
+
+    <p>No javascript a estrutura basica é apresentada abaixo. O if é a condição 'se' algo for verdadeira alguma coisa acontece.</p>
+    <pre>
+      <code>
+        if (/* condicao */) {
+          /* código a ser executado caso a condicao seja verdadeira */
+        }
+      </code>
+    </pre>
+    <p>A condição else é o 'caso contrario', qual a estrutura base é apresentada abaixo.</p>
+    <pre>
+      <code>
+        if (/* condicao */) {
+          /* código a ser executado caso a condicao seja verdadeira */
+        } else {
+          /* código a ser executado caso a condicao seja falsa */
+        }
+      </code>
+    </pre>
+    <p>A condição é switch é uma forma de ter uma condição testada diversas vezes.</p>
+    <pre>
+      <code>
+        var tinta = 'azul';
+        switch (tinta) {
+          case 'azul':
+            console.log('Irei pintar o carro de azul');
+            break;
+          case 'amarela':
+            console.log('Vou pintar a casa de amarelo');
+            break;
+          case 'verde':
+            console.log('Vou pintar o chão da garagem de verde');
+            break;
+          default:
+            console.log('Não vou pintar nada');
+            break;
+        }
+      </code>
+    </pre>
+
+  </body>
+</html>
