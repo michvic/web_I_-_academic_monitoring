@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays e Loops</title>
+    <style media="screen">
+      kbd {
+        padding: .2rem .4rem;
+        font-size: 87.5%;
+        color: #fff;
+        background-color: #212529;
+        border-radius: .2rem;
+      }
+      pre {
+        background: #001628;
+        font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
+        clear: both;
+        color: #fff;
+        padding: 0;
+        -moz-tab-size: 2;
+        -o-tab-size: 2;
+        tab-size: 2;
+        -ms-word-break: normal;
+        word-break: normal;
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+        position: relative;
+        line-height: 28px;
+        border-radius: 8px;
+        min-width: 100px;
+        max-width: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Arrays e Loops</h1>
+    <p>Quando necessitamos de armazenar mais de um valor em uma estrutura são necessárias estruturas que possibilitem o armazenamento destes valores. Neste tópico discutiremos estas estruturas.</p>
+
+    <p>Um exemplo de declaração de um array básico é apresentada abaixo.</p>
+    <pre>
+      <code>
+        let valores = [10,20,30];
+      </code>
+    </pre>
+    <p>Abaixo temos uma demonstração de como acessar valores dentro de um array pela sua posição.</p>
+    <pre>
+      <code>
+        valores[1]
+        /* este retornará a o valor da segunda posição, ou seja, o valor 20 */
+      </code>
+    </pre>
+    <h2>for</h2>
+    <p>Agora veremos um exemplo básico de loops que são estruturas de repetição do javascript. Aproveitando nosso exemplo de array vamos iterar sobre o array declarado anteriormente com o nosso primeiro exemplo.</p>
+    <pre>
+      <code>
+        for(let i = 0; i <= valores.length; i++){
+          console.log(i, valores[i])
+        }
+
+      </code>
+    </pre>
+    <h2>for in</h2>
+    <p>Também temos a forma de acesso for in quando queremos interar sobre os elementos de um array.</p>
+    <pre>
+      <code>
+        for(i in valores){
+          console.log(i)
+        }
+
+      </code>
+    </pre>
+    <h2>for each</h2>
+    <p>A estrutura for each é geralmente utilizada quando é necessário iterar sobre as propriedades de um objeto.</p>
+    <pre>
+      <code>
+        var valores = [10,20,30];
+        valores.forEach(function(i){
+          console.log(i);
+        });
+
+      </code>
+    </pre>
+    <h2>while</h2>
+    <p>Funciona basicamente igual ao for, e é possível sempre trocar o for() por um while(). Escolhemos um ou outro pela clareza do que estamos fazendo. Geralmente preferimos utilizar o loop for() para interar com contadores e loops while() até que alguma condição mude (de true para false, por exemplo).</p>
+    <pre>
+      <code>
+        var x = true;
+        while(x) {
+          console.log('Terminando condição verdadeira');
+          x = false;
+        }
+      </code>
+    </pre>
+    <h2>do while</h2>
+    <p>Segue o mesmo princípio do while, mas o corpo é sempre executado pelo menos uma vez, independente da condição, pois primeiro ele faz do e depois testa a condição.</p>
+    <pre>
+      <code>
+        do {
+          console.log('Finalizando do while');
+        } while(false);
+      </code>
+    </pre>
+    <p>Apesar da condição já começar como falsa, veremos a string "Finalizando do while" uma vez no console do browser.</p>
+
+
+
+  </body>
+</html>
